@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Planner | Student Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <h1>Student Portfolio</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="planner.html" class="active">Academic Planner</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="planner">
+
+            <h2>Academic Planner</h2>
+
+            <p>
+                Use this planner to organize your assignments, projects,
+                examinations and study activities.
+            </p>
+
+            <!-- Task Input -->
+            <div class="task-input">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new academic task">
+
+                <button id="addTaskBtn">
+                    Add Task
+                </button>
+
+            </div>
+
+            <!-- Task List -->
+            <h3>My Tasks</h3>
+
+            <ul id="taskList">
+
+            </ul>
+
+        </section>
+
+        <!-- Weekly Study Schedule -->
+        <section class="schedule">
+
+            <h2>Weekly Study Schedule</h2>
+
+            <table>
+
+                <tr>
+                    <th>Day</th>
+                    <th>Planned Activity</th>
+                </tr>
+
+                <tr>
+                    <td>Monday</td>
+                    <td>Study HTML & Complete Assignments</td>
+                </tr>
+
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Practice CSS and Responsive Design</td>
+                </tr>
+
+                <tr>
+                    <td>Wednesday</td>
+                    <td>JavaScript Programming</td>
+                </tr>
+
+                <tr>
+                    <td>Thursday</td>
+                    <td>Data Science Study</td>
+                </tr>
+
+                <tr>
+                    <td>Friday</td>
+                    <td>Project Development</td>
+                </tr>
+
+                <tr>
+                    <td>Saturday</td>
+                    <td>Revision and Practice</td>
+                </tr>
+
+                <tr>
+                    <td>Sunday</td>
+                    <td>Weekly Review and Planning</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Oparinde Samuel Oluwadamilare |
+            Student Portfolio
+        </p>
+
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/planner.js"></script>
+
+</body>
+</html>

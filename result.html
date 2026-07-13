@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Result Management System</h1>
+</header>
+
+<div class="result-container">
+
+    <input type="text" id="name" placeholder="Student Name">
+
+    <input type="text" id="id" placeholder="Student ID">
+
+    <input type="number" id="math" placeholder="Mathematics">
+
+    <input type="number" id="english" placeholder="English">
+
+    <input type="number" id="ict" placeholder="ICT">
+
+    <button onclick="calculateResult()">Calculate Result</button>
+
+    <button onclick="clearForm()">Clear</button>
+
+    <div id="output"></div>
+
+</div>
+
+<script src="js/result.js"></script>
+
+</body>
+</html>

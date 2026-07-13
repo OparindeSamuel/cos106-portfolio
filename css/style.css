@@ -1,0 +1,360 @@
+/* ==========================================
+   GLOBAL STYLES
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    background:#003366;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    flex-wrap:wrap;
+}
+
+.logo h1{
+    font-size:30px;
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#FFD700;
+}
+
+/* ==========================================
+   MAIN
+========================================== */
+
+main{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h2{
+    color:#003366;
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.hero-text h3{
+    margin-bottom:20px;
+    color:#555;
+}
+
+.hero-text p{
+    text-align:justify;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:280px;
+    border-radius:50%;
+    border:5px solid #003366;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    background:#003366;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0055aa;
+}
+
+/* ==========================================
+   SECTIONS
+========================================== */
+
+.about-preview,
+.skills,
+.projects-preview,
+.planner,
+.schedule,
+.contact,
+.contact-info{
+    background:white;
+    padding:30px;
+    margin-bottom:40px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.about-preview h2,
+.skills h2,
+.projects-preview h2,
+.planner h2,
+.schedule h2,
+.contact h2,
+.contact-info h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+/* ==========================================
+   ABOUT PAGE
+========================================== */
+
+.about-preview{
+    text-align:center;
+}
+
+.about-preview img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #003366;
+    margin:20px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-preview p{
+    text-align:justify;
+    font-size:17px;
+    margin-top:15px;
+}
+
+/* ==========================================
+   SKILLS SECTION
+========================================== */
+
+.skills ul{
+    margin-top:20px;
+    padding-left:30px;
+}
+
+.skills ul li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+.skills ol{
+    margin-top:20px;
+    padding-left:30px;
+}
+
+.skills ol li{
+    margin-bottom:10px;
+    font-size:17px;
+}
+
+/* ==========================================
+   TABLES
+========================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table th{
+    background:#003366;
+    color:white;
+    padding:15px;
+    text-align:left;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+table tr:hover{
+    background:#e8f2ff;
+}
+
+/* ==========================================
+   PROJECTS PAGE
+========================================== */
+
+/* ==========================================
+   PROJECTS PAGE
+========================================== */
+
+.projects-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+    gap:30px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.project-card{
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    transition:all .3s ease;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+}
+
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.project-card h3{
+    color:#003366;
+    margin-bottom:10px;
+}
+
+.project-card p{
+    text-align:justify;
+    margin-bottom:20px;
+}
+
+.project-card a{
+    display:inline-block;
+    padding:10px 20px;
+    background:#003366;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.project-card a:hover{
+    background:#0055aa;
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul,
+ol{
+    margin-top:15px;
+    margin-left:25px;
+}
+
+li{
+    margin-bottom:8px;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
+h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+h3{
+    color:#444;
+    margin-bottom:15px;
+}
+
+/* ==========================================
+   PARAGRAPHS
+========================================== */
+
+p{
+    margin-bottom:15px;
+    line-height:1.8;
+}
